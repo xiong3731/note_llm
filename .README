@@ -1,5 +1,5 @@
 # README
-# https://github.com/xiong3731/note_llm
+# [https://github.com/xiong3731/note_llm](https://github.com/xiong3731/note_llm)
 ---
 ## 目录结构
 
