@@ -56,7 +56,9 @@ git clone git@github.com:vllm-project/vllm.git
 vllm/examples/online_serving/run_cluster.sh
 ```
 
-<details class="lake-collapse"><summary id="u1d9c5839"><span class="ne-text">run_cluster.sh</span></summary><pre data-language="yaml" id="Ys80u" class="ne-codeblock language-yaml"><code>#!/bin/bash
+run_cluster.sh
+```
+#!/bin/bash
 
 # Check for minimum number of required arguments
 if [ $# -lt 4 ]; then
@@ -111,10 +113,11 @@ docker run \
 >
 > /root/DeepSeek-R1-Distill-Qwen-14B
 >
-
-```yaml
+```
+```
 # 对于头节点上的这个脚本可以修改33行,启动dashboard,否则后续ray list nodes 无法使用(可选)
-# 33 RAY_START_CMD="pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple && pip install -U ray[default]==2.45.0 && ray start --block --include-dashboard=True --dashboard-host=0.0.0.0"
+
+33 RAY_START_CMD="pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple && pip install -U ray[default]==2.45.0 && ray start --block --include-dashboard=True --dashboard-host=0.0.0.0"
 
 bash run_cluster.sh \
                 uhub.service.ucloud.cn/xiong/vllm/vllm-openai:20250511 \
