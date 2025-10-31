@@ -1,5 +1,5 @@
 ```
-npm i -g @openai/codexcode
+npm i -g @openai/codex
 ```
 
 ```go
